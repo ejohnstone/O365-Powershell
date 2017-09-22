@@ -41,8 +41,8 @@ function Enable-SPOFeature
 }
 
 #Required Parameters
-$sSiteColUrl = "https://ucsbconnect.sharepoint.com/teams/sandbox" 
-$sUserName = "ejohnstone@ucsb.edu" 
+$sSiteColUrl = "https://<SPODomain>.sharepoint.com/<SPOSite>" 
+$sUserName = "<SPOUser>@<SPODomain>.onmicrosoft.com" 
 $sFeatureGuid= "f6924d36-2fa8-4f0b-b16d-06b7250180fa"
 #$sPassword = Read-Host -Prompt "Enter your password: " -AsSecureString  
 $sPassword=convertto-securestring "<SPOPassword>" -asplaintext -force
